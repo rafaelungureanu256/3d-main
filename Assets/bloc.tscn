@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://co1iiuodkp5di"]
+
+[ext_resource type="PackedScene" uid="uid://pqqqb0ex1ci2" path="res://modele_3d/bloc.fbx" id="1_2k5yj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbovi"]
+size = Vector3(1.44868, 0.785668, 2.48128)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0189729, 7.42113, -0.199877)
+shape = SubResource("BoxShape3D_pbovi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.38163, 0.436103, 1.85025)
+shape = SubResource("BoxShape3D_pbovi")
+
+[node name="bloc" parent="." instance=ExtResource("1_2k5yj")]

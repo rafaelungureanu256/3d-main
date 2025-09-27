@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://de4ma03bfikam"]
+
+[ext_resource type="PackedScene" uid="uid://d0suxx8l37lhp" path="res://modele_3d/scara.fbx" id="1_do5is"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="scara" parent="." instance=ExtResource("1_do5is")]
+transform = Transform3D(0.508, 0, 0, 0, 0.304, 0, 0, 0, 0.334, 0, 0, 0)

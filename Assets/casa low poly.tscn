@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://derhandnsvvkl"]
+
+[ext_resource type="PackedScene" uid="uid://bt4c1b015g532" path="res://modele_3d/casa low poly.fbx" id="1_1a57p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbovi"]
+size = Vector3(1.44868, 0.785668, 2.48128)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.409801, 2.57003, -0.0156631)
+shape = SubResource("BoxShape3D_pbovi")
+
+[node name="casa low poly" parent="." instance=ExtResource("1_1a57p")]

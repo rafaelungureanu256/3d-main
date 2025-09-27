@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[ambientcg]
+
+material_file_directory=""
+extract_path="res://AmbientCG/Downloads"
+environment_file_directory="res://AmbientCG/Environments"
+
+[application]
+
+config/name="3D"
+run/main_scene="uid://xttvpld43ld0"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=3
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ambientcg/plugin.cfg", "res://addons/proton_scatter/plugin.cfg", "res://addons/road-generator/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
+
+[rendering]
+
+renderer/rendering_method="mobile"

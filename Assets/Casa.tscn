@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck2kkgjiopbb3"]
+
+[ext_resource type="PackedScene" uid="uid://cm88s6uhf8bbj" path="res://modele_3d/casa_joc3.fbx" id="1_pbovi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbovi"]
+size = Vector3(10.0227, 3.92449, 8.82211)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0078373, 2.22635, 0.0240936)
+shape = SubResource("BoxShape3D_pbovi")
+
+[node name="casa_joc3" parent="." instance=ExtResource("1_pbovi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.169681, 0)
