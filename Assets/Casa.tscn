@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cm88s6uhf8bbj" path="res://modele_3d/casa_joc3.fbx" id="1_pbovi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pbovi"]
-size = Vector3(10.0227, 3.92449, 8.82211)
+size = Vector3(0.455138, 10.897, 2.53866)
 
 [node name="StaticBody3D" type="StaticBody3D"]
 

@@ -1,8 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://de4ma03bfikam"]
+[gd_scene load_steps=4 format=3 uid="uid://de4ma03bfikam"]
 
 [ext_resource type="PackedScene" uid="uid://d0suxx8l37lhp" path="res://modele_3d/scara.fbx" id="1_do5is"]
+[ext_resource type="Script" uid="uid://5r7ih8rd460l" path="res://Assets/area_3d.torch" id="2_jm7bh"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbovi"]
+size = Vector3(0.455138, 10.897, 2.53866)
+
+[node name="StaticBody3D" type="StaticBody3D"]
 
 [node name="scara" parent="." instance=ExtResource("1_do5is")]
-transform = Transform3D(0.508, 0, 0, 0, 0.304, 0, 0, 0, 0.334, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("2_jm7bh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.440973, 0.00525451, 2.41989)
+shape = SubResource("BoxShape3D_pbovi")

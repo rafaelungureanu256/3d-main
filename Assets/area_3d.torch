@@ -1,9 +1,119 @@
-[orchestration type="OScript" load_steps=2 format=3 uid="uid://5r7ih8rd460l"]
+[orchestration type="OScript" load_steps=6 format=3 uid="uid://5r7ih8rd460l"]
 
 [obj type="OScriptGraph" id="OScriptGraph_sf7xf"]
 graph_name = &"EventGraph"
+offset = Vector2(245.238, -28)
 flags = 8
+nodes = Array[int]([0, 1, 2, 3])
+
+[obj type="OScriptNodeEmitMemberSignal" id="OScriptNodeEmitMemberSignal_qmxcp"]
+target_class = "Area3D"
+method = {
+"name": &"body_entered",
+"return": {
+"name": &"",
+"type": 0,
+"class_name": &"",
+"hint": 0,
+"hint_string": "",
+"usage": 6
+},
+"flags": 1,
+"default_args": [],
+"args": [{
+"name": &"body",
+"type": 24,
+"class_name": &"Node3D",
+"hint": 17,
+"hint_string": "Node3D",
+"usage": 6
+}]
+}
+id = 0
+position = Vector2(580, 160)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecIn",
+"flags": 4
+}, {
+"pin_name": &"target",
+"type": 24,
+"flags": 2050,
+"label": "Area3D (Emitter)",
+"target_class": "Area3D",
+"dv": null
+}, {
+"pin_name": &"body",
+"type": 24,
+"flags": 2,
+"target_class": "Node3D",
+"hint": 17,
+"hint_string": "Node3D"
+}, {
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}])
+
+[obj type="OScriptNodeSceneNode" id="OScriptNodeSceneNode_oofw3"]
+node_path = NodePath("Area3D")
+target_class_name = "Area3D"
+id = 1
+position = Vector2(300, 280)
+pin_data = Array[Dictionary]([{
+"pin_name": &"Area3D",
+"type": 24,
+"dir": 1,
+"flags": 2050,
+"target_class": "Area3D",
+"dv": null
+}])
+
+[obj type="OScriptNodeSceneNode" id="OScriptNodeSceneNode_3ncaq"]
+node_path = NodePath(".")
+target_class_name = "CharacterBody3D"
+id = 2
+position = Vector2(300, 380)
+pin_data = Array[Dictionary]([{
+"pin_name": &".",
+"type": 24,
+"dir": 1,
+"flags": 2050,
+"target_class": "CharacterBody3D",
+"dv": null
+}])
+
+[obj type="OScriptNodePropertyGet" id="OScriptNodePropertyGet_pj80o"]
+mode = 1
+target_class = &"CharacterBody3D"
+property_name = &"BasicFPSPlayerScene"
+property = {
+"name": &"BasicFPSPlayerScene",
+"type": 24,
+"class_name": &"PackedScene",
+"hint": 0,
+"hint_string": "",
+"usage": 4096
+}
+id = 3
+position = Vector2(300, 460)
+pin_data = Array[Dictionary]([{
+"pin_name": &"target",
+"type": 24,
+"flags": 2050,
+"label": "CharacterBody3D",
+"target_class": "CharacterBody3D",
+"dv": null
+}, {
+"pin_name": &"BasicFPSPlayerScene",
+"type": 24,
+"dir": 1,
+"flags": 2,
+"target_class": "PackedScene",
+"usage": 4096
+}])
 
 [resource]
 base_type = &"Area3D"
+connections = Array[int]([2, 0, 3, 0, 1, 0, 0, 1])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeEmitMemberSignal_qmxcp"), SubResource("OScriptNodeSceneNode_oofw3"), SubResource("OScriptNodeSceneNode_3ncaq"), SubResource("OScriptNodePropertyGet_pj80o")])
 graphs = Array[OScriptGraph]([SubResource("OScriptGraph_sf7xf")])
