@@ -412,7 +412,7 @@ transform = Transform3D(0.507929, 0, 0, 0, 0.303555, 0, 0, 0, 0.334149, -11.612,
 transform = Transform3D(1.58778, 0, 0, 0, 1, 0, 0, 0, 1.57263, -11.0498, 2.71039, -34.4131)
 
 [node name="Basic FPS Player" parent="." instance=ExtResource("23_vq2no")]
-transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -8.64077, 3.9034, -33.6836)
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -8.64077, 3.9034, -91.076)
 
 [node name="RigidBody3D" parent="." instance=ExtResource("24_xpnhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.49445, 2.83108, -26.9773)
@@ -474,7 +474,7 @@ volume_db = -6.783
 autoplay = true
 
 [node name="Node3D" parent="." instance=ExtResource("24_fjiqs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5463, 3.77087, -35.2467)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5463, 3.77087, -92.639)
 
 [node name="Node3D2" parent="." instance=ExtResource("25_v4wlu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.99824, -0.273472, -34.6455)
