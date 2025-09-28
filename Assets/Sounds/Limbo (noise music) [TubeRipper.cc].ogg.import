@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://28ammovq0y0e"
+path="res://.godot/imported/Limbo (noise music) [TubeRipper.cc].ogg-9b5fb4fec80adfdba4090f7efea594e8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Limbo (noise music) [TubeRipper.cc].ogg"
+dest_files=["res://.godot/imported/Limbo (noise music) [TubeRipper.cc].ogg-9b5fb4fec80adfdba4090f7efea594e8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

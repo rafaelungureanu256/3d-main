@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4h3m7a67inc7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4g1ep"]
+font_size = 150
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.704758, 0, 0.059376, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 563.0
+offset_top = 437.0
+offset_right = 1423.0
+offset_bottom = 642.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_4g1ep")
+horizontal_alignment = 1

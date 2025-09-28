@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0qcbkbwr64a8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nwbmx"]
+font_size = 75
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 645.0
+color = Color(0.281187, 0.281187, 0.281187, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 644.0
+text = "Missions to do:
+Find food and water
+Return to the bunker"
+label_settings = SubResource("LabelSettings_nwbmx")
+horizontal_alignment = 1
+vertical_alignment = 1

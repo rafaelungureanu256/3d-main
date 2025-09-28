@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqlpbvij11pit"]
+
+[ext_resource type="Texture2D" uid="uid://bl41y2dmnget2" path="res://modele_3d/Find food and water for you and.png" id="1_mbcot"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w2mlg"]
+albedo_color = Color(0.28183, 0.447411, 0.35815, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0428162, 0, -0.0840316)
+size = Vector3(0.121643, 1, 0.0937195)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0184021, 0.649567, -0.0458403)
+material_override = SubResource("StandardMaterial3D_w2mlg")
+size = Vector3(1.41376, 0.806702, 0.104614)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.681389, 0.649567, -0.0343352)
+material_override = SubResource("StandardMaterial3D_w2mlg")
+size = Vector3(0.177902, 0.806702, 0.127625)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(0.999997, 0.0016754, -0.00168948, -0.001675, 0.999999, 0.000238192, 0.00168988, -0.000235359, 0.999999, 0.682236, 0.649567, -0.0343352)
+material_override = SubResource("StandardMaterial3D_w2mlg")
+size = Vector3(0.196861, 0.806702, 0.127625)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.071985, 0, 0, 0, 0.0902296, 0, 0, 0, 1, 0.00177383, 0.646376, 0.0210907)
+texture = ExtResource("1_mbcot")
